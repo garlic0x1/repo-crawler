@@ -1,0 +1,16 @@
+[package]
+name = "repo-crawler"
+version = "0.1.0"
+edition = "2021"
+
+[dev-dependencies]
+tokio = { version = "1.20.1", features = ["full"] }
+
+[dependencies]
+serde = { version = "1.0.145", features = ["derive"] }
+serde_json = "1.0.86"
+gar-crawl = { path = "../gar-crawl" }
+# async-channel = "1.7.1"
+reqwest = "0.11.11"
+tokio = "1.20.1"
+anyhow = "1.0.62"
